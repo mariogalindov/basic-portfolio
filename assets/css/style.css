@@ -36,13 +36,17 @@ a{
     color: black;
     text-decoration: none;
 }
+
+h2{
+    color: #4aaaa5;
+}
 #about{
     border-left: none;
 }
 
 
 .middle{
-    /* background: url("../images/white-waves.png"); */
+    background: url("../images/white-waves.png");
 }
 
 section{
@@ -61,15 +65,12 @@ body{
 
 
 #aboutPic{
-    display: inline;
+    display: block;
     margin-right: 14px;
     /* left: 0px; */
-    width: 15%;
+    width: 200px;
     float: left;
-}
-
-#bioText{
-    /* display: inline; */
+    margin-top: 10px;
 }
 
 .clearfix::after{
@@ -79,7 +80,7 @@ body{
 }
 
 ul{
-    margin-left: 150px;
+    margin-left: 200px;
     line-height: 22px;
 }
 
@@ -95,8 +96,26 @@ ul{
     color: #C2C6C6;
 
 }
-.flex-container{
-    display: flex;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: yellow; */
+  padding: 10px;
+  align-self: center;
+}
+.grid-item {
+  /* background-color: purple;
+  border: 1px solid green; */
+  padding: 25px;
+  /* font-size: 30px; */
+  text-align: center;
+}
+
+.grid-item img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 /* Form CSS*/
